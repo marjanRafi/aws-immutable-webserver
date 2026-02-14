@@ -5,7 +5,7 @@ This project provisions a **self-healing, immutable web server** on AWS using Te
 It follows the "Infrastructure as Code" pattern where servers are treated as cattle, not pets.
 
 ## 🏗️ Architecture
-*(Insert your Diagram Screenshot Here)*
+![alt text](/immutable_web_server.png)
 
 ## 🔐 Security Decisions
 * **No SSH Access:** Port 22 is strictly blocked. All configuration happens via `user_data` scripts.
