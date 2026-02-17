@@ -1,0 +1,37 @@
+# --- 1. Terraform Core (CRITICAL) ---
+# The heavy binary folder that caused your push to freeze
+.terraform/
+**/.terraform/
+
+# State files (NEVER commit these - they contain secrets & state)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# --- 2. Secrets & Variables ---
+# Files where you might test with real keys
+*.tfvars
+*.tfvars.json
+terraform.tfvars
+
+# --- 3. System & Crash Logs ---
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# --- 4. CLI Config ---
+.terraformrc
+terraform.rc
+
+# --- 5. Editor & OS Junk ---
+# VS Code settings
+.vscode/
+# Windows thumbnails
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+# Mac (just in case)
+.DS_Store
